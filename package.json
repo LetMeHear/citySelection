@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpack-dev-server --mode development --hot --inline"
+    "build": "webpack-dev-server --mode development --hot --inline --compress"
   },
   "author": "liguodong",
   "license": "ISC",

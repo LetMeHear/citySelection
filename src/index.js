@@ -2,27 +2,19 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import ListItem from '../jsx/ListItem.jsx';
+import CseCity from '../jsx/CseCity.jsx';
 
 import '../css/style.less';
+import data from '../data.json';
 
 console.log('succeed');
-
-class HelloW extends Component {
-    renderList() {
-        return (
-            <h1 className="aaa">Hello World !</h1>
-        );
-    }
-    render() {
-        return (
-        this.renderList()
-        );
-    }
-}
+console.log(data instanceof Array);
 
 ReactDOM.render(
-    <ListItem item = "aaa from index" city="选择城市" />,
+    <div>
+	<CseCity />
+    <ListItem data = { data } />
+    </div>,
     document.getElementById('root')
 );
 
-export default HelloW;

@@ -43,5 +43,9 @@ module.exports = {
                 collapseWhitespace: true //删除空白符与换行符
             }
         })
-    ]
+    ],
+    devServer: {
+        port: 8000,
+        compress: true //采用gzip压缩
+    }
 }

@@ -8,14 +8,18 @@ export class ListItem extends Component {
 		this.handleClick = this.handleClick.bind(this);
 	}
 
-	handleClick(props) {
-		alert(this.props.item);
+	handleClick(item) {
+		alert(item.name);
 	}
 	renderList(props) {
+		const data = this.props.data;
 		return(
-				<div 
-				className="list-item-each"
-				onClick = {this.handleClick}>{this.props.city}</div>
+				data.map((item,index) => <div 
+					className="list-item-each"
+					onClick = { () => this.handleClick(item) }
+					key={ index }>
+					{ item.name }
+					</div>)
 			);
 	}
 	render() {
