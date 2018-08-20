@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './CseCity.less';
 
@@ -9,14 +10,18 @@ export class CseCity extends Component {
 	}
 
 	handleClick(ind) {
-		alert(ind);
+		console.log(ind);
 	}
 
-	renderList() {
-		return (<div
+	renderList(props) {
+		return (
+			<Link  className = { "for-text-d" } to="/cho">
+			<div
 			className={ "list-choose-city" }
-			onClick={ () => this.handleClick('chooseCity') }>
-			{"选择城市"}</div>)
+			onClick={ () => this.handleClick('选择城市') }>
+			{"选择城市"}</div>
+			</Link>
+			)
 	}
 
 	render() {

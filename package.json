@@ -23,9 +23,14 @@
     "less-loader": "^4.1.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "style-loader": "^0.22.1",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "history": "^4.7.2"
   }
 }
