@@ -8,6 +8,9 @@ export class CityItem extends Component {
 		super(props);
 	}
 
+	componentDidMount() {
+		window.history.back();
+	}
 	renderList(props) {
 		console.log(this.props.history);
 		const newArr = this.props.history.location.query.day;

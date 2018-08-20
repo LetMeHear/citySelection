@@ -14,6 +14,7 @@ export class CseCity extends Component {
 	}
 
 	renderList(props) {
+		//console.log(this.props.match);
 		return (
 			<Link  className = { "for-text-d" } to="/cho">
 			<div

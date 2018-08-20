@@ -17,7 +17,6 @@ export class ListItem extends Component {
 			}
 		})
 		console.log(item);
-		console.log(this.props.history);
 	}
 	renderList() {
 		const data = this.props.data;
@@ -25,7 +24,7 @@ export class ListItem extends Component {
 				data.map((item,index) => <Link 
 					className = { "for-text-d" }
 					key={ index }
-					to={ '/cti' }
+					to={ location }
 					>
 					<div 
 					className={'list-item-each'}
